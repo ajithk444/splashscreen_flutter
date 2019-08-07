@@ -1,4 +1,4 @@
-# base_project
+# flutter splashscreen example
 
 A new Flutter project.
 
