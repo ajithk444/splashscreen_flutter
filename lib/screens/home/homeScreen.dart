@@ -18,11 +18,23 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
+  void openLiveMap() {
+    Navigator.of(context).pushNamed("/Map");
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.name),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.map),
+            onPressed: () {
+              openLiveMap();
+            },
+          )
+        ],
       ),
       body: Center(
         child: Column(
