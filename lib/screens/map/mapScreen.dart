@@ -35,18 +35,14 @@ class _MapScreenState extends State<MapScreen> {
 
   void addMarkers() {
     setState(() {
-      _markers.add(
-        Marker(
-        markerId: MarkerId(_lastMapPosition.toString()),
-        position: _lastMapPosition,
-        icon: BitmapDescriptor.defaultMarkerWithHue(
-          BitmapDescriptor.hueOrange,
-        ),
-        infoWindow: InfoWindow(
-          title: 'Ajith',
-          snippet: 'Maraimalai Nagar - Ford'
-        )
-      ));
+      _markers.add(Marker(
+          markerId: MarkerId(_lastMapPosition.toString()),
+          position: _lastMapPosition,
+          icon: BitmapDescriptor.defaultMarkerWithHue(
+            BitmapDescriptor.hueOrange,
+          ), //('assets/images/car_marker.png'),
+          infoWindow:
+              InfoWindow(title: 'Ajith', snippet: 'Maraimalai Nagar - Ford')));
     });
   }
 
